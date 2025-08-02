@@ -49,6 +49,42 @@ The specific business objectives include:
 - **Delivering a detailed report** tailored to executives, sales managers, supply chain teams, and marketing analysts.  
 - **Establishing a data foundation** for future demand forecasting and operational planning.
 
+## Dataset Description
+
+The dataset used in this project is a simulated FMCG business dataset created to mimic real-world operations of **CenturaFoods Ltd.** It covers a 1-month period (July 2025) and includes daily records of product sales, inventory levels, returns, and promotional activities across five major Nigerian cities: Lagos, Abuja, Port Harcourt, Kano, and Ibadan.
+
+The dataset was generated to reflect realistic patterns in sales and inventory movement across multiple products and SKUs within the FMCG sector. It forms the basis for all visualizations, KPIs, and insights presented in the Power BI report.
+
+**Rows:** 776
+
+**Columns:** 10
+
+**File Format:** Excel (.xlsx)
+
+**File Name:** FMCG_Sales_Inventory_Data_July2025.xlsx
+
+You can find the dataset [**here**](./FMCG_Sales_Inventory_Data_July2025.xlsx).
+
+
+### Data Dictionary
+
+| Column Name     | Description                                              |
+| --------------- | -------------------------------------------------------- |
+| Date            | Transaction date for each sales and inventory record     |
+| Region          | The location/market where the sale occurred              |
+| Product         | Name of the product (e.g. Tomato Paste, Spaghetti)       |
+| SKU             | Unique product identifier or variant                     |
+| Units Sold      | Quantity of product sold on that specific date           |
+| Unit Price      | Price per unit of the product                            |
+| Sales Value     | Total revenue for that entry (Units Sold × Unit Price)   |
+| Inventory Level | Number of units available in stock at the end of the day |
+| Returned Units  | Number of units returned by customers                    |
+| Promotion       | Indicates whether a promotion was active (Yes or No)     |
+
+**Note:**
+**All data used in this project is fictitious and created solely for learning and portfolio purposes. It does not represent actual business data from any real-world company.**
+
+
 
 
 
