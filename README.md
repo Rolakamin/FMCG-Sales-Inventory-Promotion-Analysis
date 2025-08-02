@@ -92,7 +92,7 @@ The following tools were used to develop this project:
 - **Power Query**: For light data transformation and data type adjustments within Power BI  
 - **DAX (Data Analysis Expressions)**: For creating calculated measures and KPIs
 
-> The dataset was clean on import and required minimal pre-processing.
+**The dataset was clean on import and required minimal pre-processing.**
 
 
 
