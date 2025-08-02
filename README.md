@@ -63,7 +63,7 @@ The dataset was generated to reflect realistic patterns in sales and inventory m
 
 **File Name:** FMCG_Sales_Inventory_Data_July2025.xlsx
 
-You can find the dataset [**here**](./FMCG_Sales_Inventory_Data_July2025.xlsx).
+You can find the dataset [**here**](https://github.com/Rolakamin/FMCG-Sales-Inventory-Promotion-Analysis/blob/main/FMCG_Sales_Inventory_Data_July2025.xlsx).
 
 
 ### Data Dictionary
