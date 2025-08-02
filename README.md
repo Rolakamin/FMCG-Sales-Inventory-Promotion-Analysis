@@ -37,5 +37,18 @@ This project aims to answer the following key business questions:
 - Do promotional activities lead to a measurable increase in sales?
 - How can we present this information clearly for different business teams?
 
+## Business Objectives
+
+This project aims to support data-driven decision-making at **CenturaFoods Ltd.** by analyzing sales trends, inventory health, product returns, and promotional performance. The Power BI report is designed to provide insights that can guide strategic planning and improve operational efficiency.
+
+The specific business objectives include:
+
+- **Monitoring sales performance** across products, SKUs, and regions to identify top- and underperforming areas.  
+- **Tracking inventory levels** to detect and prevent stockouts or overstocking situations.  
+- **Analyzing product return patterns** to uncover potential quality or distribution issues.  
+- **Delivering a detailed report** tailored to executives, sales managers, supply chain teams, and marketing analysts.  
+- **Establishing a data foundation** for future demand forecasting and operational planning.
+
+
 
 
