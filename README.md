@@ -1,1 +1,1 @@
-# FMCG-Sales-Inventory-Promotion-Analysis
+# FMCG Sales, Inventory & Promotion Analysis
