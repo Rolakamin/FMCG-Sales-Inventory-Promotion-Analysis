@@ -17,4 +17,25 @@ The dataset covers a period of one month and is simulated to reflect real-world 
 
 The Power BI report is organized into multiple analytical pages, offering both high-level summaries and detailed insights. It is designed to be user-friendly and relevant for various business stakeholders, including executives, sales managers, supply chain teams, and marketing analysts.
 
+## Business Problems & Problem Statements
+
+### Business Problems
+CenturaFoods faces several operational challenges that impact efficiency, sales performance, and decision-making:
+
+- Inconsistent sales performance across regions and product lines
+- Overstocking and frequent stockouts due to limited inventory visibility
+- High rates of product returns with limited root cause analysis
+- Difficulty measuring the true impact of promotions on sales
+- Lack of centralized reporting for different business units
+
+### Problem Statements
+This project aims to answer the following key business questions:
+
+- How can we compare sales performance across regions and product categories?
+- Which products or regions are experiencing frequent stockouts or overstock situations?
+- What patterns can be identified in product returns, and where are they most frequent?
+- Do promotional activities lead to a measurable increase in sales?
+- How can we present this information clearly for different business teams?
+
+
 
