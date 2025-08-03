@@ -94,6 +94,77 @@ The following tools were used to develop this project:
 
 **The dataset was clean on import and required minimal pre-processing.**
 
+## Data Analysis
+
+## Data Analysis
+
+This section outlines the key metrics, KPIs, and a report developed to analyze CenturaFoods' operations and support business decision-making.
+
+### Key Metrics & KPIs
+
+The following KPIs were created using DAX in Power BI to track performance across sales, inventory, returns, and promotions:
+
+- **Total Sales Value** – The total revenue generated (Units Sold × Unit Price)
+- **Total Units Sold** – Sum of product units sold across all records
+- **Return Rate** – Percentage of sold units that were returned  
+  > _Formula: Returned Units ÷ Units Sold_
+- **Average Daily Sales** – Average sales value per day over the period  
+- **Inventory Turnover Rate** – Measures how quickly inventory is sold  
+  > _Formula: Units Sold ÷ Average Inventory_
+- **Promotion Uplift %** – Sales improvement during promotions  
+  > _Formula: (Promo Sales - Non-Promo Sales) ÷ Non-Promo Sales_
+- **Inventory Days Remaining** – How long current inventory will last based on sales rate
+
+> All calculations were done using DAX measures within Power BI, and formatted for clarity using ₦ (Naira) currency.
+
+---
+
+### Report Structure
+
+The Power BI report is structured across five analytical pages:
+
+#### **1. Executive Summary**
+- Total sales, units sold, return rate
+- Sales trend (line chart)
+- Sales by region (map or bar chart)
+- Top-performing products
+
+#### **2. Sales Analysis**
+- Sales by product and SKU
+- Sales by region
+- Daily trend visualizations
+- Filters: Region, product, promotion
+
+#### **3. Inventory Monitoring**
+- Inventory levels vs. units sold
+- Inventory turnover rate
+- Inventory days remaining
+- Low stock alerts (based on threshold)
+
+#### **4. Returns Analysis**
+- Return rate by product and region
+- Return trend over time
+- High-return products flag
+
+#### **5. Promotion Impact**
+- Sales during promotions vs. non-promotions
+- Promotion uplift % by product
+- Sales trend filtered by promotion status
+
+---
+
+### Insights & Observations
+
+(Insert your own insights from the dashboard here. You can fill this in once you're done analyzing your visuals.)_
+
+Example placeholders:
+- Spaghetti performed best in Lagos, especially during promotions (↑25% sales uplift)
+- Tomato Paste had high return rates in Port Harcourt — quality or logistics issue?
+- Milk Powder showed strong consistent sales but low promotion responsiveness
+
+---
+
+
 
 
 
