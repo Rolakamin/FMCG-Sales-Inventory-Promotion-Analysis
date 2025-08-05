@@ -84,6 +84,16 @@ You can find the dataset [**here**](https://github.com/Rolakamin/FMCG-Sales-Inve
 **Note:**
 **All data used in this project is fictitious and created solely for learning and portfolio purposes. It does not represent actual business data from any real-world company.**
 
+## Data Cleaning
+
+The dataset used in this project was already well-structured and required minimal cleaning. The following steps were carried out during the preparation phase in Power Query:
+
+- Column data types were reviewed and corrected where necessary (e.g., currency fields set to decimal).
+- Minor formatting adjustments were applied to ensure smooth data loading and accurate calculations.
+- No missing values or duplicate records were found.
+
+The dataset was considered clean and ready for direct use in analysis and reporting.
+
 ## Tools
 
 The following tools were used to develop this project:
@@ -92,9 +102,48 @@ The following tools were used to develop this project:
 - **Power Query**: For light data transformation and data type adjustments within Power BI  
 - **DAX (Data Analysis Expressions)**: For creating calculated measures and KPIs
 
-**The dataset was clean on import and required minimal pre-processing.**
+
 
 ## Data Analysis
+
+## Data Analysis
+
+The following KPIs were defined and calculated using DAX in Power BI. They are grouped based on business areas and aligned with CenturaFoods Ltd.’s sales, inventory, promotional, and returns monitoring objectives.
+
+### Sales Performance
+
+1. **Total Sales Value**
+**Definition**: Total revenue generated from all product sales during the analysis period.  
+**DAX**:
+```DAX
+Total Sales Value = SUM(FMCG_data[Sales Value])
+
+2. **Total Units Sold**
+**Definition**: Total number of units sold across all SKUs.
+**DAX**:
+```DAX
+Total Units Sold = SUM(FMCG_data[Units Sold])
+
+3. **Average Daily Sales**
+**Definition**: Average revenue generated per day during the analysis period.
+**DAX**:
+```DAX
+Average Daily Sales = 
+AVERAGEX(
+    VALUES(FMCG_data[Date]),
+    [Total Sales Value]
+)
+
+4. **Average Sales per Transaction**
+**Definition**: The average value of each sales transaction.
+**DAX**:
+```DAX
+Average Sales per Transaction = 
+DIVIDE([Total Sales Value], COUNTROWS(FMCG_data))
+
+
+
+
 
 ## Data Analysis
 
