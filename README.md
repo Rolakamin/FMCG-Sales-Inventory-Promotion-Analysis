@@ -112,18 +112,23 @@ The following KPIs were defined and calculated using DAX in Power BI. They are g
 
 ### Sales Performance
 
-1. Total Sales Value
-Definition: Total revenue generated from all product sales during the analysis period.  
+1. **Total Sales Value**
+   
+**Definition**: Total revenue generated from all product sales during the analysis period. 
+
 DAX:
 ```
 Total Sales Value = SUM(FMCG_data[Sales Value])
 ```
 
 2. **Total Units Sold**
+   
 **Definition**: Total number of units sold across all SKUs.
+
 **DAX**:
-```DAX
+```
 Total Units Sold = SUM(FMCG_data[Units Sold])
+```
 
 3. **Average Daily Sales**
 **Definition**: Average revenue generated per day during the analysis period.
