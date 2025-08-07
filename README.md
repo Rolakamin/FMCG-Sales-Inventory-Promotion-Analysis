@@ -131,21 +131,36 @@ Total Units Sold = SUM(FMCG_data[Units Sold])
 ```
 
 3. **Average Daily Sales**
+   
 **Definition**: Average revenue generated per day during the analysis period.
 **DAX**:
-```DAX
+```
 Average Daily Sales = 
 AVERAGEX(
     VALUES(FMCG_data[Date]),
     [Total Sales Value]
 )
+```
 
 4. **Average Sales per Transaction**
+   
 **Definition**: The average value of each sales transaction.
 **DAX**:
-```DAX
+```
 Average Sales per Transaction = 
 DIVIDE([Total Sales Value], COUNTROWS(FMCG_data))
+```
+
+### Inventory Monitoring
+
+1. **Average Inventory Level**
+
+**Definition**: The mean inventory held across all locations and products during the period.
+**DAX**:
+```
+Average Inventory Level = AVERAGE(FMCG_data[Inventory Level])
+```
+
 
 
 
