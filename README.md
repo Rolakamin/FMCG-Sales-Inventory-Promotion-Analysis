@@ -133,6 +133,7 @@ Total Units Sold = SUM(FMCG_data[Units Sold])
 3. **Average Daily Sales**
    
 **Definition**: Average revenue generated per day during the analysis period.
+
 **DAX**:
 ```
 Average Daily Sales = 
@@ -145,6 +146,7 @@ AVERAGEX(
 4. **Average Sales per Transaction**
    
 **Definition**: The average value of each sales transaction.
+
 **DAX**:
 ```
 Average Sales per Transaction = 
@@ -156,10 +158,80 @@ DIVIDE([Total Sales Value], COUNTROWS(FMCG_data))
 1. **Average Inventory Level**
 
 **Definition**: The mean inventory held across all locations and products during the period.
+
 **DAX**:
 ```
 Average Inventory Level = AVERAGE(FMCG_data[Inventory Level])
 ```
+
+2. **Inventory Turnover**
+
+**Definition**: Number of times inventory was sold and replaced during the month.
+
+**DAX**:
+```
+Inventory Turnover = 
+DIVIDE([Total Units Sold], [Average Inventory Level])
+```
+
+### Promotion Analysis
+
+1. **Promo Sales**
+
+**Definition**: Total revenue from transactions where a promotion was applied
+
+**DAX**:
+```
+Promo Sales = 
+CALCULATE([Total Sales Value], FMCG_data[Promotion] = "Yes")
+```
+
+2. **Non-Promo Sales**
+
+**Definition**: Total revenue from transactions without any promotion.
+
+**DAX**:
+```
+Non-Promo Sales = 
+CALCULATE([Total Sales Value], FMCG_data[Promotion] = "No")
+```
+
+3. **Promotion Uplift (%)**
+
+**Definition**: The percentage change in sales due to promotions, compared to non-promotional sales.
+
+**DAX**:
+```
+Promotion Uplift % = 
+DIVIDE([Promo Sales] - [Non-Promo Sales], [Non-Promo Sales], 0)
+```
+
+### Returns
+
+1. **Total Returned Units**
+
+**Definition**: Total quantity of products returned during the analysis period.
+
+**DAX**:
+```
+Total Returned Units = SUM(FMCG_data[Returned Units])
+```
+
+2. **Unit Return Rate**
+
+**Definition**: Percentage of sold units that were returned.
+
+**DAX**:
+```
+Unit Return Rate = 
+DIVIDE([Total Returned Units], [Total Units Sold], 0)
+```
+
+All DAX measures were stored in a dedicated DAX_Measures table in Power BI, grouped into folders such as Sales Performance, Inventory, Promotions, and Returns for better organization.
+
+
+
+
 
 
 
